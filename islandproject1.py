@@ -65,14 +65,13 @@ try:
     clock = 0
     while clock < 24:
         t_now = datetime.now()
-        t_var = t_now.replace(hour=clock, minute=59)
+        t_var = t_now.replace(hour=clock, minute=30)
         if t_var == t_now:
             symbol_list = ["KRW-BTC","KRW-ETH","KRW-XRP"]
             for sym in symbol_list:
                 hgb_ai_calculate(sym, "minute60")
         else:
             clock = clock + 1
-            print(clock)
         if clock == 24:
             clock = 0
 
