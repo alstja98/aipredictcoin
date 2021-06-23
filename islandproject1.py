@@ -16,7 +16,7 @@ def post_message(token, channel, text):
     print(response)
 
 
-myToken = "xoxb-2213547764481-2201106863555-evuYS5GbS7cB6LU6C5teC1a1"
+myToken = "xoxb-2213547764481-2201106863555-NAL74UBJh9IayfSLo0h1lVYH"
 def hgb_ai_calculate(code, time):
     # 타깃데이터 설정
     eth = pyupbit.get_ohlcv(code, interval=time, count=30000)
