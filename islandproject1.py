@@ -65,7 +65,7 @@ try:
     clock = 0
     while clock < 24:
         t_now = datetime.now()
-        t_var = t_now.replace(hour=clock, minute=59)
+        t_var = t_now.replace(hour=clock, minute=10)
         if t_var == t_now:
             symbol_list = ["KRW-BTC","KRW-ETH","KRW-XRP"]
             for sym in symbol_list:
