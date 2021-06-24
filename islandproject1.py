@@ -16,7 +16,7 @@ def post_message(token, channel, text):
     print(response)
 
 
-myToken = "xoxb-2213547764481-2201106863555-NAL74UBJh9IayfSLo0h1lVYH"
+myToken = "xoxb-2213547764481-2201106863555-NgtasM3MYWEcOnR2l1Af8OwX"
 def hgb_ai_calculate(code, time):
     # 타깃데이터 설정
     eth = pyupbit.get_ohlcv(code, interval=time, count=30000)
@@ -65,7 +65,7 @@ try:
     clock = 0
     while clock < 24:
         t_now = datetime.now()
-        t_var = t_now.replace(hour=clock, minute=59)
+        t_var = t_now.replace(hour=clock, minute=52)
         if t_var == t_now:
             symbol_list = ["KRW-BTC","KRW-ETH","KRW-XRP"]
             for sym in symbol_list:
